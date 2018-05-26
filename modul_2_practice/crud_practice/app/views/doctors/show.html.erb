@@ -1,0 +1,19 @@
+<div>
+<h1>Doctor:</h1>
+<%=@doctor.name%><br />
+<%=@doctor.practice%><br />
+Patients: 
+<%@doctor.patients.each do |p| %><br />
+<%= p.name%>
+
+<%end%>
+</div>
+<div>
+
+<%= link_to 'Create new doctor', new_doctor_path %>
+<%= link_to 'Edit', edit_doctor_path(@doctor)%>
+<h1>delete doctor</h1>
+<%=form_tag @doctor, method: "DELETE" do %>
+<%=submit_tag "Delete"%>
+<%end%>
+</div>

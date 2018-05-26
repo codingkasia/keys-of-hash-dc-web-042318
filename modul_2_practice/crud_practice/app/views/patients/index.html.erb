@@ -1,0 +1,6 @@
+<div>
+<%@patients.each do |p| %>
+<%=link_to p.name, patient_path(p) %>
+<%end%>
+</div>
+<%=link_to 'create a new patient', new_patient_path %>

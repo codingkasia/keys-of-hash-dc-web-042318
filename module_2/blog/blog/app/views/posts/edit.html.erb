@@ -1,0 +1,10 @@
+<h1>edit me!</h1>
+<%=form_with(model: @post, local: true) do |form| %>
+
+<%=form.label :title%><br />
+<%= form.text_field :title %>
+<br />
+<%= form.text_area :text %>
+<br />
+<%=form.submit%>
+<%end%>

@@ -1,0 +1,7 @@
+<div>
+<%=@patient.name%><br />
+
+<%=form_tag @patient, method: "DELETE" do %>
+<%=submit_tag 'delete'%>
+<%end%>
+</div>
